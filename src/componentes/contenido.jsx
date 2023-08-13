@@ -2,6 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Diseno from "./diseno.jsx";
 import Ingreso from "./compositor.jsx";
+import Plantilla from "./nuevodisenoreceta.jsx";
 
 function Contenido() {
   let [datos, setdatos] = React.useState({
@@ -13,7 +14,8 @@ function Contenido() {
     rutpac: "",
     fecha: "",
     indicaciones: "",
-    diagnostico: ""
+    diagnostico: "",
+    telefono: ""
   });
 
   /* IMAGEN */
@@ -58,7 +60,8 @@ function Contenido() {
       rutpac: x.rutpac,
       fecha: x.fecha,
       indicaciones: x.indicaciones,
-      diagnostico: x.diagnostico
+      diagnostico: x.diagnostico,
+      telefono: x.telefono
     });
   }
 
@@ -67,10 +70,10 @@ function Contenido() {
       <Grid container spacing={20}>
         <Grid item xs={12}></Grid>
         <Grid item xs={12}>
-          <Grid container spacing={20}>
+          <Grid container spacing={10}>
             <Grid item xs={1}></Grid>
             <Grid item xs={5}>
-              <Diseno
+              {/*<Diseno
                 nombre={datos.nombre}
                 profesion={datos.profesion}
                 rutprof={datos.rutprof}
@@ -79,6 +82,18 @@ function Contenido() {
                 fecha={fechaactual}
                 indicaciones={datos.indicaciones}
                 diagnostico={datos.diagnostico}
+              />*/}
+              <Plantilla
+                nombre={datos.nombre}
+                profesion={datos.profesion}
+                rutprof={datos.rutprof}
+                nombrepaciente={datos.nombrepac}
+                rutpaciente={datos.rutpac}
+                fecha={fechaactual}
+                indicaciones={datos.indicaciones}
+                diagnostico={datos.diagnostico}
+                telefono={datos.telefono}
+                edad={datos.edad}
               />
             </Grid>
             <Grid item xs={5}>

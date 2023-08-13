@@ -14,7 +14,7 @@ function Footer() {
           bottom: 0,
           top: "90%",
           backgroundColor: "white",
-          color: "black",
+          color: "black"
         }}
       >
         <Toolbar>
@@ -23,6 +23,9 @@ function Footer() {
             <Grid item xs={4}>
               {" "}
               <p style={{ textAlign: "center" }}>CopyRight {año}</p>
+              <a href="https://www.facebook.com/groups/676176357741476">
+                Unirme al grupo de Facebook
+              </a>
             </Grid>
             <Grid item xs={4}></Grid>
           </Grid>

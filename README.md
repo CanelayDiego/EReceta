@@ -1,2 +1,0 @@
-# EReceta
-Created with CodeSandbox

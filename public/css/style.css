@@ -33,3 +33,12 @@ body {
 button {
   font-family: "Montserrat", sans-serif !important;
 }
+a {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 1em !important;
+}
+.limite {
+  word-wrap: break-word !important; /* IE 5.5-7 */
+  white-space: -moz-pre-wrap !important; /* Firefox 1.0-2.0 */
+  white-space: pre-wrap !important; /* current browsers */
+}

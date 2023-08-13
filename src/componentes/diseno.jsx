@@ -1,9 +1,9 @@
 import React from "react";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import ReactToPrint from "react-to-print";
 import Button from "@mui/joy/Button";
+import Card from "@mui/joy/Card";
 
 function Diseno(props) {
   /* SOBRE  EL PLUGIN DE PRINT  */
@@ -25,7 +25,7 @@ function Diseno(props) {
         content={() => componentRef.current}
         />*/}
       <div>
-        <Paper>
+        <Card sx={{ boxShadow: "lg", backgroundColor: "#fbfcfd" }}>
           <div>
             <ReactToPrint
               trigger={() => (
@@ -169,7 +169,7 @@ function Diseno(props) {
               </div>
             </div>
           </div>
-        </Paper>
+        </Card>
       </div>
     </div>
   );
