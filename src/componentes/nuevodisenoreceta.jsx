@@ -39,7 +39,8 @@ function Plantilla(props) {
               textAlign: "center",
               alignContent: "center",
               alignItems: "center",
-              paddingBottom: 5
+              paddingBottom: 5,
+              paddingTop: "5%"
             }}
           >
             <Avatar sx={{ "--Avatar-size": "4rem" }}>
@@ -97,7 +98,7 @@ function Plantilla(props) {
                   textAlign: "center",
                   alignContent: "center",
                   alignItems: "center",
-                  paddingBottom: 5
+                  paddingBottom: 2
                 }}
               >
                 <Typography level="h6"> {props.nombrepaciente}</Typography>
@@ -110,10 +111,10 @@ function Plantilla(props) {
                   <Sheet
                     sx={{
                       borderRadius: "sm",
-                      p: 1.5,
-                      my: 1.5,
+                      p: 0.5,
+                      my: 0.5,
                       display: "flex",
-                      gap: 2,
+                      gap: 1,
                       "& > div": { flex: 1 }
                     }}
                   >
@@ -144,20 +145,24 @@ function Plantilla(props) {
                   </Sheet>{" "}
                 </Card>
               </CardContent>
-              <div style={{ height: "40px" }}></div>
+              <div style={{ height: "20px" }}></div>
 
               <Divider variant="middle"></Divider>
-              <div style={{ height: "40px" }}></div>
+              <div style={{ height: "20px" }}></div>
 
               <CardContent>
-                <Typography level="h6">Indicaciones</Typography>
+                <Typography level="h6" sx={{ paddingLeft: 2 }}>
+                  Indicaciones
+                </Typography>
                 <Card
                   sx={{
                     boxShadow: "lg",
                     alignItems: "center",
                     alignContent: "center",
                     marginBottom: 5,
-                    marginTop: 2
+                    marginTop: 2,
+                    marginLeft: 2,
+                    marginRight: 2
                   }}
                   variant="outlined"
                 >

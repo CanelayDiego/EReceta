@@ -71,8 +71,8 @@ function Contenido() {
         <Grid item xs={12}></Grid>
         <Grid item xs={12}>
           <Grid container spacing={10}>
-            <Grid item xs={1}></Grid>
-            <Grid item xs={5}>
+            <Grid item lg={1}></Grid>
+            <Grid item lg={5} xs={12}>
               {/*<Diseno
                 nombre={datos.nombre}
                 profesion={datos.profesion}
@@ -96,14 +96,14 @@ function Contenido() {
                 edad={datos.edad}
               />
             </Grid>
-            <Grid item xs={5}>
+            <Grid item lg={5} xs={12}>
               <Ingreso
                 datos={datosdelcompositor}
                 imagencargar={mostrarImagen}
                 reciboimg={reciboimagen}
               />
             </Grid>
-            <Grid item xs={1}></Grid>
+            <Grid item lg={1}></Grid>
           </Grid>
         </Grid>
         <Grid item xs={12}></Grid>

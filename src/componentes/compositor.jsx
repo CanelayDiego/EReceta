@@ -47,11 +47,11 @@ function Ingreso(props) {
         sx={{ "--Card-radius": "8px" }}
       >
         <form action="">
-          <Grid xs={12}>
+          <Grid lg={12} xs={12}>
             <h3>Sobre el Profesional</h3>
           </Grid>
           <Grid container spacing={2}>
-            <Grid item xs={4}>
+            <Grid item lg={4} xs={12}>
               <TextField
                 id="outlined-basic"
                 label="Nombre"
@@ -73,7 +73,7 @@ function Ingreso(props) {
                 {" "}
               </TextField>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item lg={4} xs={12}>
               <TextField
                 id="outlined-basic"
                 label="Profesión"
@@ -96,7 +96,7 @@ function Ingreso(props) {
                 {" "}
               </TextField>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item lg={4} xs={12}>
               {" "}
               <TextField
                 id="outlined-basic"
@@ -120,7 +120,7 @@ function Ingreso(props) {
                 {" "}
               </TextField>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item lg={12} xs={12}>
               {" "}
               <TextField
                 id="outlined-basic"
@@ -144,7 +144,7 @@ function Ingreso(props) {
                 {" "}
               </TextField>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item lg={6} xs={12}>
               <div>
                 <TextField
                   label="Logo"
@@ -158,7 +158,7 @@ function Ingreso(props) {
                 />
               </div>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item lg={6} xs={12}>
               <Button
                 variant="soft"
                 fullWidth="true"
@@ -170,11 +170,11 @@ function Ingreso(props) {
             </Grid>
           </Grid>
           <Divider sx={{ padding: "10px" }}></Divider>
-          <Grid xs={12}>
+          <Grid lg={12} xs={12}>
             <h3>Sobre el Paciente</h3>
           </Grid>
           <Grid container spacing={2}>
-            <Grid item xs={6}>
+            <Grid item lg={6} xs={12}>
               <TextField
                 id="outlined-basic"
                 label="Nombre y apellido"
@@ -198,7 +198,7 @@ function Ingreso(props) {
                 {" "}
               </TextField>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item lg={6} xs={12}>
               <TextField
                 id="outlined-basic"
                 label="RUT"
@@ -222,7 +222,7 @@ function Ingreso(props) {
                 {" "}
               </TextField>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item lg={12} xs={12}>
               <TextField
                 id="outlined-basic"
                 label="Diagnóstico"
@@ -246,17 +246,17 @@ function Ingreso(props) {
                 {" "}
               </TextField>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item lg={12} xs={12}>
               {" "}
               {/* <BasicDatePicker elvalor={valuedeldatapicker} /> */}
             </Grid>
           </Grid>
           <Divider sx={{ padding: "5px" }}></Divider>
-          <Grid xs={12}>
+          <Grid lg={12} xs={12}>
             <h3>Indicaciones</h3>
           </Grid>
           <Grid container spacing={2}>
-            <Grid item xs={12}>
+            <Grid item lg={12} xs={12}>
               {" "}
               <Textarea
                 className="indicaciones"
